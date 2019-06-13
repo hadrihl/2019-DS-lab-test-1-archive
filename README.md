@@ -11,11 +11,16 @@ $ npm install --save <package>
 
 Steps taken to perform QC:
 --------------------------
+
+![Sequence Diagram](img/sequence-diagram.png)
+
 1. Run server-1. 
 
 2. Run client. client sents message to server-1. Server-1 sents message to server-2. 
 
 3. server-2 receives message from server-1 upon successful connection. Server-2 sents message to server-1 and server-1 forward the message back to client. 
+
+
 
 
 Respective Authors:
