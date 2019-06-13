@@ -1,0 +1,11 @@
+<script type="text/javascript" src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script type="text/javascript">
+	var socket = io('http://localhost:33333');
+
+	socket.on('msg', function(data) {
+	console.log("Receive:");
+		console.log(" msg:" + data);
+	});
+	console.log("Send: This is message 1");
+	socket.emit('msg', "This is message 1");
+</script> 
